@@ -3,13 +3,11 @@
 If you use this code, please consider citing:
 Zoya Bylinskii, Nam Wook Kim, Peter O'Donovan, Sami Alsheikh, Spandan Madan, Hanspeter Pfister, Fredo Durand, Bryan Russell, and Aaron Hertzmann. "Learning Visual Importance for Graphic Designs and Data Visualizations" (UIST'17)
 
-```@inproceedings{predimportance,
-author = {Zoya Bylinskii and Nam Wook Kim and Peter O'Donovan and Sami Alsheikh and Spandan Madan and Hanspeter Pfister and Fredo Durand and Bryan Russell and Aaron Hertzmann},
-title = {Learning Visual Importance for Graphic Designs and Data Visualizations},
-publisher = {ACM},
-booktitle = {Proceedings of the 30th Annual ACM Symposium on User Interface Software \& Technology},
-series = {UIST '17},
-year = {2017}
+``` @inproceedings{predimportance,
+    author = {Zoya Bylinskii and Nam Wook Kim and Peter O'Donovan and Sami Alsheikh and Spandan Madan and Hanspeter Pfister and Fredo Durand and Bryan Russell and Aaron Hertzmann},
+    title = {Learning Visual Importance for Graphic Designs and Data Visualizations},
+    booktitle = {Proceedings of the 30th Annual ACM Symposium on User Interface Software \& Technology},
+    year = {2017}
 }
 ```
 
