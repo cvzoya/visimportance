@@ -11,7 +11,8 @@ test_interval: 200
 display: 20
 average_loss: 20
 
-# update learning rate by a factor of gamma every stepsize iterations
+# fixed policy does not update leanring rate
+#lr_policy: "fixed"
 lr_policy: "step"
 gamma: 0.1
 stepsize: 20000
@@ -29,7 +30,7 @@ max_iter: 100000
 weight_decay: 0.0005
 # take a snapshot of the gradient each of this number of iterations:
 snapshot: 10000
-snapshot_prefix: "snapshots/massvis_fcn32"
+snapshot_prefix: "snapshots/massvis-fcn32-sigm32-lr07"
 test_initialization: false
 
 solver_mode: GPU
