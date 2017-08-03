@@ -2,15 +2,17 @@
 
 ## GDI (Graphic Design Importance) Dataset
 
-Training data:
+Source of the data: http://www.dgp.toronto.edu/~donovan/layout/index.html
+
+Training data (862 files):
 
   * file listing: [train.txt](http://visimportance.mit.edu/data/GDI/train.txt)
   * image files: [gd_train.zip](http://visimportance.mit.edu/data/GDI/gd_train.zip)
-  * importance maps: http://visimportance.mit.edu/data/GDI/gd_imp_train.zip
+  * importance maps: [gd_imp_train.zip](http://visimportance.mit.edu/data/GDI/gd_imp_train.zip)
 
-Validation data:
+Validation data (216 files):
 
-  * file listing: http://visimportance.mit.edu/data/GDI/valid.txt
-  * image files: http://visimportance.mit.edu/data/GDI/gd_val.zip
-  * importance maps: http://visimportance.mit.edu/data/GDI/gd_imp_val.zip
+  * file listing: [valid.txt](http://visimportance.mit.edu/data/GDI/valid.txt)
+  * image files: [gd_val.zip](http://visimportance.mit.edu/data/GDI/gd_val.zip)
+  * importance maps: [gd_imp_val.zip](http://visimportance.mit.edu/data/GDI/gd_imp_val.zip)
 
