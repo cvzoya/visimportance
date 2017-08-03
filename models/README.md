@@ -12,4 +12,4 @@ The FCN-16s model was then initialized from the FCN-32s model. As specified in [
 
   * FCN-32s: [massvis_fcn32.caffemodel](http://visimportance.mit.edu/data/massvis/massvis_fcn32.caffemodel)
 
-The FCN-32s model was initialized from the pre-trained [VOC-FCN32s](https://github.com/shelhamer/fcn.berkeleyvision.org/blob/master/voc-fcn32s/caffemodel-url) model.
+The FCN-32s model was initialized from the pre-trained [VOC-FCN32s](https://github.com/shelhamer/fcn.berkeleyvision.org/blob/master/voc-fcn32s/caffemodel-url) model. We found that adding skip connections did not improve performance on this dataset.
