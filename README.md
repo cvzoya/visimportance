@@ -18,9 +18,13 @@ Zoya Bylinskii, Nam Wook Kim, Peter O'Donovan, Sami Alsheikh, Spandan Madan, Han
 
 This code is written in Python 2.7 using the [Caffe library](http://caffe.berkeleyvision.org/), and is based on [code for semantic segmentation](https://github.com/shelhamer/fcn.berkeleyvision.org). 
 
-About our models:
+Using the models for prediction:
 ------
   * We provide [pre-trained models](https://github.com/cvzoya/visimportance/tree/master/models) for both graphic design and data visualization importance prediction. These models were separately trained on the GDI and Massvis datasets, respectively. 
+  * To make importance predictions on graphic designs, download [gdi_fcn16.caffemodel](http://visimportance.mit.edu/data/GDI/gdi_fcn16.caffemodel) and run [get_predictions.py](https://github.com/cvzoya/visimportance/tree/master/gdi/get_predictions.py) on a desired directory of images
+  * To make importance predictions on data visualizations, download [massvis_fcn32.caffemodel](http://visimportance.mit.edu/data/massvis/massvis_fcn32.caffemodel) and run [get_predictions.py](https://github.com/cvzoya/visimportance/tree/master/massvis/get_predictions.py) on a desired directory of images
+
+#### About our models:
   * We initialized our models using the pre-trained [VOC-FCN32s](https://github.com/shelhamer/fcn.berkeleyvision.org/blob/master/voc-fcn32s/caffemodel-url) and only fine-tuned the final importance prediction layers and additional skip connections (if applicable).
 
 Setting up training:
