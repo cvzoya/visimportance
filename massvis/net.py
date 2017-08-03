@@ -29,11 +29,11 @@ def fcn(split,learn_all=False):
     pydata_params = dict(split=split, mean=(104.00699, 116.66877, 122.67892),
             seed=1337)
     if split == 'train':
-        pydata_params['train_dir'] = '../data/' # <- provided you have the massvis data files here
+        pydata_params['train_dir'] = '../data/' # <- # CHANGETHIS: provided you have the massvis data files here
         pylayer = 'MassvisTrainDataLayerBubble'
         pydata_params['binarize'] = tobinarize
     else:
-        pydata_params['val_dir'] = '../data/' # <- provided you have the massvis data files here
+        pydata_params['val_dir'] = '../data/' # <- # CHANGETHIS: provided you have the massvis data files here
         pylayer = 'MassvisDataLayerBubble'
         pydata_params['binarize'] = tobinarize
         

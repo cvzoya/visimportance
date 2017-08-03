@@ -113,16 +113,16 @@ def DumpLMDB(OUT_DIR,maindir,split,randomize):
     return
             
 
-maindir = '../../data/';
+maindir = '../../data/'; # CHANGETHIS to where to save the LMDB database
 
 # create validation LMDB
-OUT_DIR = '../../data/GDI/valid_lmdb/';
+OUT_DIR = maindir+'GDI/valid_lmdb/';
 split = 'valid';
 randomize = False; 
 DumpLMDB(OUT_DIR,maindir,split,randomize)
 
 # create train set LMDB
-OUT_DIR = '../../data/GDI/train_lmdb/';
+OUT_DIR = maindir+'GDI/train_lmdb/'; 
 split = 'train';
 randomize = True; 
 DumpLMDB(OUT_DIR,maindir,split,randomize)

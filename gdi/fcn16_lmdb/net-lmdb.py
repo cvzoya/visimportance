@@ -93,14 +93,14 @@ def make_net():
     
     learn_all=False
     
-    fname_img_lmdb = '../../data/GDI/train_lmdb/img.lmdb' # <- provided you have the gdi data files here
-    fname_map_lmdb = '../../data/GDI/train_lmdb/map.lmdb' # <- provided you have the gdi data files here
+    fname_img_lmdb = '../../data/GDI/train_lmdb/img.lmdb' # <- CHANGETHIS: provided you have the gdi data files here
+    fname_map_lmdb = '../../data/GDI/train_lmdb/map.lmdb' # <- CHANGETHIS: provided you have the gdi data files here
     
     with open('train_lmdb.prototxt', 'w') as f:
         f.write(str(fcn('train',fname_img_lmdb,fname_map_lmdb,learn_all)))
         
-    fname_img_lmdb = '../../data/GDI/valid_lmdb/img.lmdb' # <- provided you have the gdi data files here
-    fname_map_lmdb = '../../data/GDI/valid_lmdb/map.lmdb' # <- provided you have the gdi data files here
+    fname_img_lmdb = '../../data/GDI/valid_lmdb/img.lmdb' # <- CHANGETHIS: provided you have the gdi data files here
+    fname_map_lmdb = '../../data/GDI/valid_lmdb/map.lmdb' # <- CHANGETHIS: provided you have the gdi data files here
 
     with open('val_lmdb.prototxt', 'w') as f:
         f.write(str(fcn('valid',fname_img_lmdb,fname_map_lmdb,learn_all)))

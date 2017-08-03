@@ -1,13 +1,10 @@
 import caffe
 import sys
-
-sys.path.append('..') # so that imp_layers can be imported
-import surgery, score
-
+import surgery
 import numpy as np
 import os
 
-weights = '../scp-voc-fcn32s-zoyaedits/fcn32_lr00001_trial2/_iter_100000.caffemodel'
+weights = '../models/massvis_fcn32.caffemodel' # CHANGETHIS to location of pre-trained massvis FCN-32s model
 
 # init
 caffe.set_device(int(sys.argv[1]))

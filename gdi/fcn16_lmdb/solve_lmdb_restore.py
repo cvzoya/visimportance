@@ -15,6 +15,6 @@ caffe.set_mode_gpu()
 
 solver = caffe.SGDSolver('solver_lmdb.prototxt')
 
-solver.restore('snapshot_fcn16_lmdb/_iter_30000.solverstate')
+solver.restore('snapshots/iter_30000.solverstate')
 
 solver.solve()

@@ -1,16 +1,10 @@
 import caffe
 import sys
-
-sys.path.append('..')
-import surgery, score
-
+import surgery
 import numpy as np
 import os
 
-#import setproctitle
-#setproctitle.setproctitle(os.path.basename(os.getcwd()))
-
-weights = 'fcn32s-heavy-pascal.caffemodel' #'vgg16fc.caffemodel'
+weights = 'fcn32s-heavy-pascal.caffemodel' # CHANGETHIS to location of pre-trained VOC FCN-32s model
 
 # init
 caffe.set_device(int(sys.argv[1]))
@@ -24,9 +18,3 @@ interp_layers = [k for k in solver.net.params.keys() if 'up' in k]
 surgery.interp(solver.net, interp_layers)
 
 solver.solve()
-# scoring
-#val = np.loadtxt('../data/segvalid11.txt', dtype=str)
-
-#for _ in range(25):
-#    solver.step(4000)
-#    score.seg_tests(solver, False, val, layer='score')

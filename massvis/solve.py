@@ -1,13 +1,10 @@
 import caffe
 import sys
-
-sys.path.append('..')
-import surgery, score
-
+import surgery
 import numpy as np
 import os
 
-weights = '../scp-voc-fcn32s-zoyaedits/fcn32s-heavy-pascal.caffemodel' 
+weights = 'fcn32s-heavy-pascal.caffemodel'  # CHANGETHIS to location of pre-trained VOC FCN-32s model
 
 # init
 caffe.set_device(int(sys.argv[1]))
