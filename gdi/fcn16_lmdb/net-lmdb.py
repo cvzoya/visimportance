@@ -1,5 +1,5 @@
 import sys
-sys.path.append('../../caffe/python')
+sys.path.append('../../caffe/python') # CHANGETHIS: to your caffe python path
 
 import caffe
 from caffe import layers as L, params as P
@@ -26,7 +26,8 @@ def fcn(split,fname_img_lmdb,fname_map_lmdb,learn_all=False):
     param = learned_param if learn_all else frozen_param
     
     n = caffe.NetSpec()
-         
+    
+    # invoke LMDB data loader
     n.data = L.Data(batch_size=1, backend=P.Data.LMDB, source=fname_img_lmdb, ntop=1)
     n.label = L.Data(batch_size=1, backend=P.Data.LMDB, source=fname_map_lmdb, ntop=1)
 
@@ -92,14 +93,14 @@ def make_net():
     
     learn_all=False
     
-    fname_img_lmdb = '../../data/GDI/train_lmdb/img.lmdb'
-    fname_map_lmdb = '../../data/GDI/train_lmdb/map.lmdb'
+    fname_img_lmdb = '../../data/GDI/train_lmdb/img.lmdb' # <- provided you have the gdi data files here
+    fname_map_lmdb = '../../data/GDI/train_lmdb/map.lmdb' # <- provided you have the gdi data files here
     
     with open('train_lmdb.prototxt', 'w') as f:
         f.write(str(fcn('train',fname_img_lmdb,fname_map_lmdb,learn_all)))
         
-    fname_img_lmdb = '../../data/GDI/valid_lmdb/img.lmdb'
-    fname_map_lmdb = '../../data/GDI/valid_lmdb/map.lmdb'
+    fname_img_lmdb = '../../data/GDI/valid_lmdb/img.lmdb' # <- provided you have the gdi data files here
+    fname_map_lmdb = '../../data/GDI/valid_lmdb/map.lmdb' # <- provided you have the gdi data files here
 
     with open('val_lmdb.prototxt', 'w') as f:
         f.write(str(fcn('valid',fname_img_lmdb,fname_map_lmdb,learn_all)))

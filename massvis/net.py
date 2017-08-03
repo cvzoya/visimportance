@@ -1,5 +1,5 @@
 import sys
-sys.path.append('../../caffe/python')
+sys.path.append('../../caffe/python') # CHANGETHIS: to your caffe python path
 
 import caffe
 from caffe import layers as L, params as P
@@ -29,15 +29,15 @@ def fcn(split,learn_all=False):
     pydata_params = dict(split=split, mean=(104.00699, 116.66877, 122.67892),
             seed=1337)
     if split == 'train':
-        pydata_params['train_dir'] = '../../data/'
-        pylayer = 'MassvisTrainDataLayerBubble' # can instead choose: MassvisDataLayerBubble
+        pydata_params['train_dir'] = '../data/' # <- provided you have the massvis data files here
+        pylayer = 'MassvisTrainDataLayerBubble'
         pydata_params['binarize'] = tobinarize
     else:
-        pydata_params['val_dir'] = '../../data/'
+        pydata_params['val_dir'] = '../data/' # <- provided you have the massvis data files here
         pylayer = 'MassvisDataLayerBubble'
         pydata_params['binarize'] = tobinarize
         
-        
+    # will invoke the custom python data loader in imp_layers_massvis.py
     n.data, n.label = L.Python(module='imp_layers_massvis', layer=pylayer,
             ntop=2, param_str=str(pydata_params))
 
