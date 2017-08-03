@@ -5,7 +5,7 @@ We also provide links to our [models](https://github.com/cvzoya/visimportance/tr
 
 About our models:
   * We provide pre-trained models for both graphic design and data visualization importance prediction. These models were separately trained on the GDI and Massvis datasets, respectively. 
-  * We initialized our models using the pre-trained [VOC-FCN32s](https://github.com/shelhamer/fcn.berkeleyvision.org/blob/master/voc-fcn32s/caffemodel-url) and only fine-tuned the final importance prediction layer.
+  * We initialized our models using the pre-trained [VOC-FCN32s](https://github.com/shelhamer/fcn.berkeleyvision.org/blob/master/voc-fcn32s/caffemodel-url) and only fine-tuned the final importance prediction layers and additional skip connections (if applicable).
 
 About our data loaders:
   * We wrote custom data loaders in [imp_layers.py](https://github.com/cvzoya/visimportance/blob/master/imp_layers.py) which get invoked by the data layers (see top of train.prototxt and val.prototxt files)
