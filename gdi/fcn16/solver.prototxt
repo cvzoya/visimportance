@@ -1,0 +1,37 @@
+train_net: "train.prototxt"
+test_net: "val.prototxt"
+
+# every test_interval training iterations, test_iter * batch_size images are fetched for testing
+test_iter: 217 
+
+# make test net, but don't invoke it from the solver itself
+test_interval: 200
+
+# how often caffe outputs results to screen:
+display: 20
+average_loss: 20
+
+# update learning rate by a factor of gamma every stepsize iterations
+lr_policy: "step"
+gamma: 0.1
+stepsize: 20000
+
+# lr for normalized softmax
+base_lr: 1e-7
+# standard momentum
+momentum: 0.9
+
+# gradient accumulation (it will do 20 iterations of batch_size before updating the weights)
+iter_size: 20
+
+max_iter: 100000
+# regularization of large weights
+weight_decay: 0.0005
+# take a snapshot of the gradient each of this number of iterations:
+snapshot: 5000
+
+# where to output the trained models
+snapshot_prefix: "snapshot_fcn16/"
+
+test_initialization: false
+solver_mode: GPU
