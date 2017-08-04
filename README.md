@@ -3,6 +3,8 @@
 Code to train and test models to predict importance (saliency) on graphic designs and data visualizations.
 We also provide links to our [models](https://github.com/cvzoya/visimportance/tree/master/models) and our train/test [data](https://github.com/cvzoya/visimportance/tree/master/data).
 
+For our paper, supplemental material, video, and interactive demo, please visit: http://visimportance.csail.mit.edu/
+
 If you use this code, please consider citing:
 Zoya Bylinskii, Nam Wook Kim, Peter O'Donovan, Sami Alsheikh, Spandan Madan, Hanspeter Pfister, Fredo Durand, Bryan Russell, and Aaron Hertzmann. "Learning Visual Importance for Graphic Designs and Data Visualizations" (UIST'17)
 
