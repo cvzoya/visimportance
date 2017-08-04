@@ -18,6 +18,7 @@ Validation data (216 files):
 
 <img src="images/2045_1741104630_4a8a574778_z.jpg" height="200" align="left"/>
 <img src="images/2045_1741104630_4a8a574778_z.png" height="200" align="left"/>
+<p style="clear: both;">
 
 ## Massvis (Visualization) Dataset
 
