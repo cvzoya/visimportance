@@ -42,6 +42,8 @@ Validation data (202 files):
 
 Note: the file paths in the training files point to this directory, so you can download the data files to this location in your cloned repo.
 
+Sample images and importance maps from the Massvis dataset:
+
 <img src="images/economist_daily_chart_103.png" width="21%" align="left"/>
 <img src="images/economist_daily_chart_103_imp.png" width="21%" align="left"/>
 <img src="images/economist_daily_chart_202.png" width="21%" align="left"/>
