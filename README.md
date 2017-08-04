@@ -23,8 +23,8 @@ This code is written in Python 2.7 using the [Caffe library](http://caffe.berkel
 Using the models for prediction:
 ------
   * We provide [pre-trained models](https://github.com/cvzoya/visimportance/tree/master/models) for both graphic design and data visualization importance prediction. These models were separately trained on the [GDI](http://www.dgp.toronto.edu/~donovan/layout/index.html) and [Massvis](http://massvis.mit.edu/) datasets, respectively. 
-  * To make importance predictions on graphic designs, download [gdi_fcn16.caffemodel](http://visimportance.mit.edu/data/GDI/gdi_fcn16.caffemodel) and run [get_predictions.py](https://github.com/cvzoya/visimportance/tree/master/gdi/get_predictions.py) on a desired directory of images.
-  * To make importance predictions on data visualizations, download [massvis_fcn32.caffemodel](http://visimportance.mit.edu/data/massvis/massvis_fcn32.caffemodel) and run [get_predictions.py](https://github.com/cvzoya/visimportance/tree/master/massvis/get_predictions.py) on a desired directory of images.
+  * To make importance predictions on graphic designs, download [gdi_fcn16.caffemodel](http://visimportance.mit.edu/data/GDI/gdi_fcn16.zip) and run [get_predictions.py](https://github.com/cvzoya/visimportance/tree/master/gdi/get_predictions.py) on a desired directory of images.
+  * To make importance predictions on data visualizations, download [massvis_fcn32.caffemodel](http://visimportance.mit.edu/data/massvis/massvis_fcn32.zip) and run [get_predictions.py](https://github.com/cvzoya/visimportance/tree/master/massvis/get_predictions.py) on a desired directory of images.
 
 #### About our models:
   * We initialized our models using the pre-trained [VOC-FCN32s](https://github.com/shelhamer/fcn.berkeleyvision.org/blob/master/voc-fcn32s/caffemodel-url) and fine-tuned the final importance prediction layers and additional skip connections (if applicable).
@@ -46,4 +46,5 @@ Setting up training:
   * We wrote custom data loaders for both models in [imp_layers.py](https://github.com/cvzoya/visimportance/blob/master/gdi/imp_layers.py) and [imp_layers_massvis.py](https://github.com/cvzoya/visimportance/blob/master/massvis/imp_layers_massvis.py) which get invoked by the data layers (see top of `train.prototxt` and `val.prototxt` files).
   * We also provide an example of how to load data using a pre-constructed LMDB database, without relying on these custom data loaders (see [gdi/fcn16_lmdb](https://github.com/cvzoya/visimportance/tree/master/gdi/fcn16_lmdb)). In this case, all the data processing occurs during database construction (see [create_lmdb_data.py](https://github.com/cvzoya/visimportance/blob/master/gdi/fcn16_lmdb/create_lmdb_data.py)).
 
+If for some reason, any of the data/model download links are not working, please check for them [here](http://visimportance.mit.edu/).
 

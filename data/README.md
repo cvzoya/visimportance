@@ -10,7 +10,7 @@ Training data (862 files):
   * image files: [gd_train.zip](http://visimportance.mit.edu/data/GDI/gd_train.zip)
   * importance maps: [gd_imp_train.zip](http://visimportance.mit.edu/data/GDI/gd_imp_train.zip)
 
-Validation data (216 files):
+Testing data (216 files):
 
   * file listing: [valid.txt](http://visimportance.mit.edu/data/GDI/valid.txt)
   * image files: [gd_val.zip](http://visimportance.mit.edu/data/GDI/gd_val.zip)
@@ -34,7 +34,7 @@ Training data (1209 files):
 * image files: [train.zip](http://visimportance.mit.edu/data/massvis/train.zip)
 * importance maps: [train_imp.zip](http://visimportance.mit.edu/data/massvis/train_imp.zip)
 
-Validation data (202 files):
+Testing data (202 files):
 
 * file listing: [valid.txt](http://visimportance.mit.edu/data/massvis/valid.txt)
 * image files: [valid.zip](http://visimportance.mit.edu/data/massvis/valid.zip)
