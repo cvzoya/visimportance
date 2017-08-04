@@ -7,3 +7,5 @@ We also provide code where data is loaded from an LMDB database in `fcn16_lmdb`,
 To begin training, [download](https://github.com/cvzoya/visimportance/tree/master/data) the GDI dataset images and ground truth importance maps, update the paths to the data and pre-trained models, and run `solve.py`.
 
 We also provide sample code for re-starting a terminated run: `solve_restart.py`. Update the file paths to use.
+
+We provide code for computing the predictions using a trained model: [get_predictions.py](https://github.com/cvzoya/visimportance/blob/master/gdi/get_predictions.py). You can train your own or use one of our [pre-trained models](https://github.com/cvzoya/visimportance/tree/master/models).
