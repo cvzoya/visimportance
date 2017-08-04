@@ -42,7 +42,7 @@ Validation data (202 files):
 
 Note: the file paths in the training files point to this directory, so you can download the data files to this location in your cloned repo.
 
-<img src="images/economist_daily_chart_103.png" width="25%" align="left"/>
-<img src="images/economist_daily_chart_103_imp.png" width="25%" align="left"/>
-<img src="images/economist_daily_chart_202.png" width="25%" align="left"/>
-<img src="images/economist_daily_chart_202_imp.png" width="25%" align="left"/>
+<img src="images/economist_daily_chart_103.png" width="23%" align="left"/>
+<img src="images/economist_daily_chart_103_imp.png" width="23%" align="left"/>
+<img src="images/economist_daily_chart_202.png" width="23%" align="left"/>
+<img src="images/economist_daily_chart_202_imp.png" width="23%" align="left"/>
