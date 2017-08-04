@@ -17,8 +17,7 @@ Validation data (216 files):
   * importance maps: [gd_imp_val.zip](http://visimportance.mit.edu/data/GDI/gd_imp_val.zip)
 
 <img src="images/2045_1741104630_4a8a574778_z.jpg" height="200" align="left"/>
-<img src="images/2045_1741104630_4a8a574778_z.png" height="200" align="left"/>
-<p style="clear: both;">
+<img src="images/2045_1741104630_4a8a574778_z.png" height="200">
 
 ## Massvis (Visualization) Dataset
 
